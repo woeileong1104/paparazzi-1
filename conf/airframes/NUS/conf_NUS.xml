@@ -1,6 +1,6 @@
 <conf>
   <aircraft
-   name="Flowerfly"
+   name="Flowerfly-Tailled"
    ac_id="1"
    airframe="airframes/NUS/flowerfly_tailled.xml"
    radio="radios/cockpitSX.xml"
