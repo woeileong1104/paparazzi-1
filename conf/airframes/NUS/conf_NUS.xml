@@ -1,8 +1,8 @@
 <conf>
   <aircraft
-   name="Flowerfly-Tailled"
+   name="Flowerfly-Tailed"
    ac_id="1"
-   airframe="airframes/NUS/flowerfly_tailled.xml"
+   airframe="airframes/NUS/flowerfly_tailed.xml"
    radio="radios/cockpitSX.xml"
    telemetry="telemetry/default_rotorcraft.xml"
    flight_plan="flight_plans/rotorcraft_basic.xml"
