@@ -41,10 +41,10 @@
 <airframe name="flowerfly_tailled">
 
   <servos driver="Pwm">
-    <servo name="motor" no="0" min="1100" neutral="0" max="1900"/>
-    <servo name="rudder" no="1" min="1100" neutral="1500" max="1900"/>
-    <servo name="elevator" no="2" min="1100" neutral="1500" max="1900"/>
-    <servo name="aileron" no="3" min="1100" neutral="1500" max="1900"/>
+    <servo name="motor" no="0" min="1000" neutral="1000" max="2000"/>
+    <servo name="rudder" no="1" min="1000" neutral="1500" max="2000"/>
+    <servo name="elevator" no="2" min="1000" neutral="1500" max="2000"/>
+    <servo name="aileron" no="3" min="1000" neutral="1500" max="2000"/>
   </servos>
 
   <commands>
@@ -55,7 +55,7 @@
   </commands>
 
   <command_laws>
-    <call fun="motor_mixing_run(autopilot_motors_on,FALSE,values)"/>
+    <!--call fun="motor_mixing_run(autopilot_motors_on,FALSE,values)"/-->
     <set servo="motor" value="@THRUST"/>
     <set servo="rudder" value="@ROLL"/>
     <set servo="elevator" value="@PITCH"/>
@@ -233,7 +233,7 @@
       <subsystem name="radio_control" type="ppm"/>
     </target>
 
-    <subsystem name="motor_mixing"/>
+    <!--subsystem name="motor_mixing"/-->
     <subsystem name="actuators" type="pwm">
       <!-- This airframe is using the servo PWM outputs directly to drive mosfets, which in turn directly drive brushed motors.
            With the following settings we will be driving the motors with a 36KHz signal that should be well above anyone's hearing range.
