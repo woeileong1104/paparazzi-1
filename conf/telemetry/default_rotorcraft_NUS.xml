@@ -134,8 +134,18 @@
       <message name="FILTER_ALIGNER"    period="0.02"/>
     </mode>
 
+    <mode name="Control">
+      <!--message name="ROTORCRAFT_STATUS" period="1"/-->
+      <message name="STAB_ATTITUDE_REF_INT"  period="0.2"/>
+      <message name="ROTORCRAFT_CMD"         period="0.15"/>      
+      <message name="AHRS_EULER_INT"         period="0.15"/>
+      <message name="VFF"                    period="0.15"/>
+      <!--message name="BARO_RAW"           period="0.1"/-->
+    </mode>
+
     <mode name="SysID">
       <!--message name="ROTORCRAFT_STATUS" period="1"/-->
+      <message name="STAB_ATTITUDE_REF_INT"  period="0.15"/>
       <message name="ROTORCRAFT_CMD"     period="0.15"/>      
       <message name="IMU_GYRO_SCALED"    period="0.15"/>
       <message name="AHRS_GYRO_BIAS_INT" period="0.15"/>
