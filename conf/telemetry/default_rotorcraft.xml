@@ -146,6 +146,8 @@
       <message name="INS_REF"           period="5.1"/>
     </mode>
 
+    <mode name="empty"></mode>
+
   </process>
 
 </telemetry>
